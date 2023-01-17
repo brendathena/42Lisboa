@@ -1,0 +1,13 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/santanna/Documents/Rascunho_Printf/Commented Code'
+gcc -Wall -Wextra -Werror -I. -c ft_printf.c -o ft_printf.o
+ 
+gcc -Wall -Wextra -Werror -I. -c ft_put.c -o ft_put.o
+gcc -Wall -Wextra -Werror -I. -c ft_str.c -o ft_str.o
+ 
+ar -rcs libftprintf.a ft_printf.o ft_put.o ft_str.o
+ranlib libftprintf.a
+ 
+/bin/rm -f ft_printf.o ft_put.o ft_str.o
+make: Leaving directory `/Users/santanna/Documents/Rascunho_Printf/Commented Code'
+ 
